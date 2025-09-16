@@ -14,7 +14,7 @@ if (!GEMINI_API_KEY) {
   console.error('FATAL ERROR: GEMINI_API_KEY is not set!');
 }
 const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
-const aiModel = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+const aiModel = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
 
 // --- HEALTH CHECK ENDPOINT ---
 app.get('/', (req, res) => {
